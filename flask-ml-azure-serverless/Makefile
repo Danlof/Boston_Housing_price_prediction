@@ -24,7 +24,7 @@ docker-run:
 docker-debug:
 	#to debug inside the container
 	docker run -d -p 5000:5000 --name boston-container boston-house-app
-	docker exec -it my-flask-container bash
+	docker exec -it boston-container bash
 
 docker-clean:
 	#remove all images locally
